@@ -9,6 +9,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Omair Sudan",
+  "keywords": [
+    "ionic","config","config file setup"
+  ],
   "license": "MIT",
   "dependencies": {
     "commander": "^7.1.0",
