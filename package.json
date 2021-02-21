@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "A command line interface for ionic APP builds.",
   "main": "index.js",
+  "preferGlobal": true,
+  "bin": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,5 +13,9 @@
   "dependencies": {
     "commander": "^7.1.0",
     "fast-xml-parser": "^3.18.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/comrade1996/configion.git"
   }
 }

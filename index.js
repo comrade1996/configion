@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const {program} = require('commander');
 const xmlParser = require('fast-xml-parser');
 const fs = require('fs');
@@ -7,7 +8,6 @@ const xmlVersion = '<?xml version=\'1.0\' encoding=\'utf-8\'?>';
 const options = {
     ignoreAttributes : false,
 };
-
 
 
 program
@@ -29,6 +29,8 @@ program
             modifiedXML = xmlVersion + modifiedXML;
         
             fs.writeFileSync("config.xml", modifiedXML);
+
+            console.log('Configuration Updated Successfully');
         
         } catch (error) {
             console.log(error.message);
